@@ -9,6 +9,6 @@ COPY . ./
 
 RUN apt-get update && apt-get install -y libpq-dev build-essential
 
-RUN pip install --no-cache-dir -r requirments.txt
+RUN pip install -r requirments.txt
 
 CMD [ "python", "./setup.py" ]
